@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:text="浏览记录"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#0099FF"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_list_activity_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/data_Empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/data_empty" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_fragment_ProdutEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尴尬,你还没有查看过此类房源哦!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#6699FF"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

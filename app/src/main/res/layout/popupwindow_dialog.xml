@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lvshi"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="#393a3f"
+        android:orientation="horizontal">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:src="@drawable/lvshi"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="律师"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/jinji"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="#393a3f"
+        android:orientation="horizontal">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:src="@drawable/jinji"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="经纪人"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/normal_user"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="#393a3f"
+        android:orientation="horizontal">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:src="@drawable/normal_user"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="普通用户"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

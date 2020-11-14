@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/homePage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/homePage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:background="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_homepage"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lovePage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:focusable="true">
+
+        <RadioButton
+            android:id="@+id/lovePage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="false"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_tab_lovepage"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/messagePage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/messagePage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="false"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_tab_messagepage"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/personPage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/personPage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="false"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selector_tab_personpage"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

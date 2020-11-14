@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app ="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <com.zxl.library.DropDownMenu
+            android:id="@+id/drop_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ddmenuTextSize="13sp"
+            app:ddtextUnselectedColor="@color/drop_down_unselected"
+            app:ddtextSelectedColor="@color/drop_down_selected"
+            app:ddmenuSelectedIcon="@mipmap/drop_down_selected_icon"
+            app:ddmenuUnselectedIcon="@mipmap/drop_down_unselected_icon"
+            app:ddmaskColor="@color/mask_color"
+            app:ddmenuBackgroundColor="@color/white"
+            app:ddmenuMaxHeight="280dp"
+            app:ddneedSetSlectedColor="true"
+            />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lay_fragment_FlatEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_fragment_ProdutEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loadfailed" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_fragment_ProdutEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尴尬！此地区没有该类型的房源哦"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#6699FF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

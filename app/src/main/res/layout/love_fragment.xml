@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="猜你喜欢"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#ffffff"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#55000000" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:background="#fff" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/data_Empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/data_empty" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_fragment_ProdutEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尴尬,好像没有耶!"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#6699FF"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#ddcccc"
+    android:id="@+id/item">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pic_default"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:text="符文剑哦i"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/message_not_read_num"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:padding="1dp"
+            android:background="@drawable/msg_num_shape"
+            android:clickable="false"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="8sp"
+           android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>

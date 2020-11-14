@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!--    <CustomView.PullToRefreshLayout-->
+    <!--        android:id="@+id/refreshable_view"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="fill_parent" >-->
+
+    <!--        <ListView-->
+    <!--            android:id="@+id/list_view"-->
+    <!--            android:layout_width="fill_parent"-->
+    <!--            android:layout_height="fill_parent" >-->
+    <!--        </ListView>-->
+    <!--    </CustomView.PullToRefreshLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0099FF"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息列表"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+        <ImageView
+            android:id="@+id/qiehuan"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/qiehuan"/>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_lvshi"/>
+
+    </RelativeLayout>
+
+    <CustomView.MyListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/loadfailed" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#0099FF"
+            android:text="暂无聊天记录" />
+    </LinearLayout>
+
+</LinearLayout>

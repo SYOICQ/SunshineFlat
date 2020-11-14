@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <CustomView.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:background="#0099FF"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/touxiang"
+                        android:layout_margin="10dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/pic_default"
+                        android:layout_alignParentBottom="true"
+                        app:civ_border_width="5dp"
+                        app:civ_border_color="#ffffff"/>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/touxiang"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/touxiang"
+                        android:text="点击登录"
+                        android:textColor="#ffffff"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/info_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_toRightOf="@id/touxiang"
+                        android:text="修改密码"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                    <ImageView
+                        android:id="@+id/apply_list"
+                        android:visibility="gone"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/apply_list"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                     />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:padding="20dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="24dp"
+                        android:text="浏览记录"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/new_flat"
+                            android:gravity="center"
+                            android:drawableTop="@drawable/new_flat"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="新房"/>
+                        <TextView
+                            android:id="@+id/ershou_flat"
+                            android:gravity="center"
+                            android:drawableTop="@drawable/ershou_flat"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="二手房"/>
+                        <TextView
+                            android:id="@+id/zufang_flat"
+                            android:gravity="center"
+                            android:drawableTop="@drawable/zufang_flat"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="租房"/>
+
+                        <TextView
+                            android:id="@+id/foreign_flat"
+                            android:gravity="center"
+                            android:drawableTop="@drawable/foreign_flat"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="海外"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="20dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="认证服务"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/my_lvshi"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/lvshi"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="律师认证"/>
+                        <TextView
+                            android:id="@+id/my_jinji"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:text="经纪人认证"
+                            android:drawableTop="@drawable/jinji"
+                            />
+                        <TextView
+                            android:id="@+id/my_admin"
+                            android:text="管理员认证"
+                            android:drawableTop="@drawable/admin"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="20dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="我的喜欢"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/my_pinjia"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/love_1"
+                            android:gravity="center"
+                            android:text="我的喜欢"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            />
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </CustomView.MyScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0099FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+    </FrameLayout>
+
+
+</FrameLayout>
